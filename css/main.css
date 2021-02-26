@@ -17,4 +17,50 @@ body {
   display: flex;
   overflow: hidden;
   position: relative;
+  /* height: calc(100% - 40px); */
+}
+
+.filter-menu {
+  display: flex;
+  flex: 0 0 300px;
+  max-width: 300px;
+  position: relative;
+  
+  background: #ffffff;
+  flex-direction: column;
+  border-right: 1px solid #dee5ed;
+}
+
+.filter-menu.hide {
+  display: none;
+}
+
+.filter-menu > .header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px 0 20px;
+  background-color: #fff;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3dae3;
+  transition: all 0.3s;
+}
+
+.filter-menu > .header > .title {
+  font-size: 16px;
+  color: #354053;
+  font-weight: 600;
+  margin-right: 10px;
+  line-height: normal;
+}
+
+.filter-menu > .content {
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1 0;
+  display: flex;
+  overflow-y: auto;
 }
