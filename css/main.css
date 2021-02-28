@@ -17,7 +17,6 @@ body {
   display: flex;
   overflow: hidden;
   position: relative;
-  /* height: calc(100% - 40px); */
 }
 
 .filter-menu {
@@ -25,9 +24,8 @@ body {
   flex: 0 0 300px;
   max-width: 300px;
   position: relative;
-  
-  background: #ffffff;
   flex-direction: column;
+  background-color: #ffffff;
   border-right: 1px solid #dee5ed;
 }
 
@@ -57,10 +55,25 @@ body {
 
 .filter-menu > .content {
   overflow-y: auto;
+  padding-top: 6px;
 }
 
 .content {
   flex: 1 0;
   display: flex;
+  padding: 10px 0;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.content > .custom-submenu {
+  width: calc(100% - 20px);
+  margin: 0 10px 10px;
+}
+
+.content > .custom-box {
+  width: calc(100% - 20px);
+  height: calc(100% - 10px);
+  margin: 0 10px 10px;
   overflow-y: auto;
 }
