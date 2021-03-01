@@ -11,7 +11,7 @@
 </head>
 <body>
   <section class="wrapper">
-    <aside class="filter hide">
+    <aside class="filter">
       <div class="filter__header">
         <span class="title">Filtros</span>
       </div>
@@ -23,9 +23,11 @@
 
     <main class="main">
       <div class="main__header">
-        <button>abrir filtro</button>
+        <button class="ui compact icon button">
+          <i class="filter icon"></i>
+        </button>
       </div>
-      
+
       <div class="main__content">
         <div class="tools">
           <div class="tools__wrapper">
@@ -34,8 +36,37 @@
           </div>
         </div>
 
-        <div class="box">
-          [ content box ]
+        <div class="table__wrapper">
+          <table class="ui sortable fixed table">
+            <thead>
+              <tr>
+                <th class="sorted ascending">Name</th>
+                <th class="">Status</th>
+                <th class="">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jamie</td>
+                <td class="positive">Approved</td>
+                <td class="warning">Requires call</td>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td class="negative">Denied</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>No Action</td>
+                <td>None</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          [ pagination ]
         </div>
       </div>
     </main>

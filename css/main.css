@@ -76,6 +76,14 @@ body {
   border-bottom: 1px solid #d3dae3;
 }
 
+.main__content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #fff;
+}
+
 .main__content > .tools {
   height: 45px;
   padding: 0 10px;
@@ -85,23 +93,6 @@ body {
   background-color: #f7f9fb;
 }
 
-.main__content {
-  flex: 1;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  background-color: #f7f9fb;
-}
-
-.main__content > .box {
-  overflow-y: auto;
-  margin: 0 10px 10px;
-  width: calc(100% - 20px);
-  height: calc(100% - 10px);
-  
-
-  background-color: yellow;
-}
 
 .tools__wrapper {
   height: 100%;
