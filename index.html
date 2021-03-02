@@ -17,56 +17,143 @@
       </div>
 
       <div class="filter__content">
-        [ menu filtros ]
+        <div class="ui fluid vertical menu" style="border-radius: 0; border-width: 0 0 1px 0;">
+          <div class="item">
+            <div class="ui input"><input type="text" placeholder="Search..."></div>
+          </div>
+          <div class="item">
+            Home
+            <div class="menu">
+              <a class="active item">Search</a>
+              <a class="item">Add</a>
+              <a class="item">Remove</a>
+            </div>
+          </div>
+          <a class="item">
+            <i class="grid layout icon"></i> Browse
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <div class="ui dropdown item">
+            More
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item"><i class="edit icon"></i> Edit Profile</a>
+              <a class="item"><i class="globe icon"></i> Choose Language</a>
+              <a class="item"><i class="settings icon"></i> Account Settings</a>
+            </div>
+          </div>
+        </div>
       </div>
     </aside>
 
     <main class="main">
       <div class="main__header">
         <button class="ui compact icon button">
-          <i class="filter icon"></i>
+          <i class="cog icon"></i>
         </button>
       </div>
 
       <div class="main__content">
-        <div class="tools">
-          <div class="tools__wrapper">
-            <div>[ left ]</div>
-            <div class="right">[ right ]</div>
-          </div>
-        </div>
-
         <div class="table__wrapper">
-          <table class="ui sortable fixed table">
+          <table class="ui sortable table">
             <thead>
               <tr>
-                <th class="sorted ascending">Name</th>
-                <th class="">Status</th>
-                <th class="">Notes</th>
+                <th>Name</th>
+                <th style="min-width: 270px;">Title</th>
+                <th style="width: 180px;">Company</th>
+                <th style="width: 310px;">Actions</th>
+                <th style="width: 250px;">Contact Location</th>
+                <th style="width: 100px;"># Employees</th>
+                <th style="width: 150px;">Industry</th>
+                <th style="width: 150px;">Keywords</th>
+                <th style="width: 140px;">Contact Stage</th>
+                <th style="width: 140px;">Contact Last Activity</th>
+                <th style="width: 120px;">Contact Owner</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Jamie</td>
-                <td class="positive">Approved</td>
-                <td class="warning">Requires call</td>
+                <td>3idiots Multimedia</td>
+                <td>Global 3PO Lead, North Asia</td>
+                <td>(...)</td>
+                <td>Save</td>
+                <td>Tokyo, Japan</td>
+                <td>230,000</td>
+                <td>internet</td>
+                <td>(...)</td>
+                <td>Net New</td>
+                <td>(...)</td>
+                <td>(...)</td>
               </tr>
               <tr>
-                <td>Jill</td>
-                <td class="negative">Denied</td>
-                <td>None</td>
+                <td>3idiots Multimedia</td>
+                <td>Global 3PO Lead, North Asia</td>
+                <td>(...)</td>
+                <td>Save</td>
+                <td>Tokyo, Japan</td>
+                <td>230,000</td>
+                <td>internet</td>
+                <td>(...)</td>
+                <td>Net New</td>
+                <td>(...)</td>
+                <td>(...)</td>
               </tr>
               <tr>
-                <td>John</td>
-                <td>No Action</td>
-                <td>None</td>
+                <td>3idiots Multimedia</td>
+                <td>Global 3PO Lead, North Asia</td>
+                <td>(...)</td>
+                <td>Save</td>
+                <td>Tokyo, Japan</td>
+                <td>230,000</td>
+                <td>internet</td>
+                <td>(...)</td>
+                <td>Net New</td>
+                <td>(...)</td>
+                <td>(...)</td>
+              </tr>
+              <tr>
+                <td>3idiots Multimedia</td>
+                <td>Global 3PO Lead, North Asia</td>
+                <td>(...)</td>
+                <td>Save</td>
+                <td>Tokyo, Japan</td>
+                <td>230,000</td>
+                <td>internet</td>
+                <td>(...)</td>
+                <td>Net New</td>
+                <td>(...)</td>
+                <td>(...)</td>
+              </tr>
+              <tr>
+                <td>3idiots Multimedia</td>
+                <td>Global 3PO Lead, North Asia</td>
+                <td>(...)</td>
+                <td>Save</td>
+                <td>Tokyo, Japan</td>
+                <td>230,000</td>
+                <td>internet</td>
+                <td>(...)</td>
+                <td>Net New</td>
+                <td>(...)</td>
+                <td>(...)</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="pagination">
-          [ pagination ]
+        <div class="pagination__wrapper">
+          <h5 class="range">1 - 25 of 79,856</h5>
+
+          <div class="ui pagination menu">
+            <a class="icon item"><i class="left chevron icon"></i></a>
+            <a class="item">1</a>
+            <a class="item">2</a>
+            <a class="item">3</a>
+            <a class="item">4</a>
+            <a class="icon item"><i class="right chevron icon"></i></a>
+          </div>
         </div>
       </div>
     </main>
